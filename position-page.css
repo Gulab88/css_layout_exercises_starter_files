@@ -1,0 +1,75 @@
+.container {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+nav {
+	height: 200px;
+	background-color: maroon;
+	position: fixed;
+	width: 100%;
+}
+
+nav .icon-img {
+	height: 100px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 60%;
+	vertical-align: middle;
+	border: 1px solid black;
+}
+
+nav ul {
+	display: inline-block;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block; /*why do you need to set display: inline-block on both ul & li*/
+}
+
+nav li::after {
+	content: "|";
+	margin-left: 5px;
+
+}
+
+nav a:hover {
+	color:black;
+}
+
+body {
+	background: url(../images/outerspace_landscape.jpeg) no-repeat;
+	background-size: cover;
+}
+
+main {
+	padding-top: 90px;
+	min-width: 1000px;   /*how do I figure out how many pixels to set these properties to?*/
+}
+
+.box {
+	margin-top: 150px;
+	width: 600px;
+	height: 300px;
+	position: relative;
+	border: 10px dotted green;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.spacecat, .spacedog {
+	position: absolute;
+	width: 200px;
+}
+
+.spacecat {
+	bottom: 90px;  /*why the negative property values*/
+	left: -90px;
+}
+
+
+.spacedog {
+	bottom: -120px;
+	right: -60px;
+}
